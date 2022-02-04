@@ -39,7 +39,7 @@ input {
 }
 
 input[type=text]:focus {
-  border: 3px solid #A7E2E2;
+  border: 3px solid #4fc4cf;
 }
 
 .start-btn {
@@ -48,14 +48,14 @@ input[type=text]:focus {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #bae8e8;
-  color: #272343;
+  background-color: #272343;
+  color: #fff;
   font-size: 1rem;
   transition: all .3s ease;
 }
 
 .start-btn:hover {
-  background-color: #A7E2E2;
+  background-color: #1e1b33;
 }
 
 .card {
@@ -63,6 +63,46 @@ input[type=text]:focus {
   box-shadow: 8px 10px 14px 6px rgba(0,0,0,0.17);
   border-radius: 4px;
   line-height: 1.6rem;
+}
+
+.results {
+  display: flex;
+  gap: 6rem;
+}
+
+.accuracy,
+.speed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.accuracy h3,
+.speed h3 {
+  font-weight: 300;
+}
+
+.accuracy p,
+.speed p {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.accuracy p {
+  color: #4fc4cf;
+}
+
+.speed p {
+  color: #994ff3;
+}
+
+.correct {
+  background-color: #4fc4cf;
+}
+
+.incorrect {
+  background-color: #994ff3;
 }
 
 @media screen and (max-width: 660px) {
