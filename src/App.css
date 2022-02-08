@@ -8,12 +8,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 6rem;
-  gap: 4rem;
+  padding: 1rem 6rem;
+  gap: 2rem;
 }
 
 .heading {
   color: #272343;
+  font-size: 3rem;
 }
 
 .countdown {
@@ -34,12 +35,28 @@ input {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
-  height: 2rem;
+  height: 3rem;
   outline: none;
+  text-align: center;
+  font-size: 2rem;
 }
 
-input[type=text]:focus {
+input:focus {
   border: 3px solid #4fc4cf;
+}
+
+/*textarea {
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  height: 200px;
+  padding: 10px;
+  border-radius: 4px;
+}*/
+
+input:disabled {
+  background-color: #d6d6d6;
 }
 
 .start-btn {
@@ -56,6 +73,16 @@ input[type=text]:focus {
 
 .start-btn:hover {
   background-color: #1e1b33;
+}
+
+.start-btn:disabled {
+  background-color: #d6d6d6;
+  cursor: default;
+  transition: all .3s ease;
+}
+
+.start-btn:disabled:hover {
+  background-color: #d6d6d6;
 }
 
 .card {
